@@ -21,15 +21,29 @@
     "light": "#1F32D6",
     "dark": "#1F32D6"
   },
+  "versions": [
+    "English",
+    "中文"
+  ],
   "primaryTab": {
-    "name": "User Manual",
+    "name": "User Guide",
     "isDefaultHidden": true
+  },
+  "topbarLinks": [
+    {
+      "name": "Official website",
+      "url": "https://mcpnow-website.lovable.app/website-en "
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Download",
+    "url": "https://mcpnow-website.lovable.app/website-cn#download"
   },
   "tabs": [
     {
       "name": "MCP Now",
       "url": "en/introduction",
-      "version": "Version 1.0"
+      "version": "English"
     }
   ],
   "navigation": [

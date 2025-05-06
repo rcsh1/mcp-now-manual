@@ -4,40 +4,33 @@ lang: "en"
 description: "Introduces what MCP Now is and how it works."
 ---
 
-MCP Now is a desktop application that simplifies the management of Model Context Protocol (MCP) configurations. As a local proxy service, it bridges AI applications (MCP Hosts like Cursor, Claude Desktop) with various MCP servers, serving as a central hub for MCP server discovery, configuration and management.
+MCP Now is a desktop app that lets you discover, manage, and share MCP servers effortlessly, all in one place.
+
+Built for AI developers using tools like Cursor, Claude Desktop, or OpenDevin, MCP Now is your command center to run your local AI workflows with speed, control, and zero config stress.
 
 
 ## General architecture
 
-MCP Now acts as a local proxy service between the hosts and the servers. It provides a seamless way to switch between server for different use cases.
+MCP Now acts as a local proxy service between the hosts and the servers. It provides a seamless way to switch between servers for different use cases.
 
 <img src="/images/en/overview.png" className="diagram" alt="Overview"/>
 
 - **Hosts**: AI applications that connect to MCP servers.
-- **Servers**: MCP servers. You can create multiple server instances of the same server, one for development and one for production.
-- **Profile**: A collection of server that can be assigned to a host.
-
-When operational, MCP Now:
-
-1. Assigns a connection endpoint to each host  
-2. Mounts the chosen profile to the host's endpoint  
-3. Routes all incoming requests to the appropriate server instance runtimes  
-4. Each server instance runtime connects to the corresponding data source or remote service
+- **Servers**: MCP servers. You can set up multiple configurations for the same server.
+- **Profile**: A collection of servers that can be assigned to a host.
 
 
 ## Features
 
-Managing MCP configurations for multiple AI applications can be challenging:
-
-- Redundant configuration work when the same server needs to be set up across multiple hosts  
-- Manual configuration changes are needed for different use cases and environments
-
-MCP Now simplifies MCP configuration management by providing:
-
-- Centralized discovery, installation, and management of MCP servers  
-- Support for multiple instances of the same server with different configurations  
-- Profile-based instance switching for easy context switching  
-- An intuitive interface for monitoring connections and server status
-
-
-
+* Effortless Discovery  
+  * Instantly surface the most relevant MCP servers through curated recommendations, so you never miss out on the tools you need.
+* Frictionless Installation  
+  * Skip the manual steps — install any MCP server with a single click, no documentation deep-dives or command-line guesswork required.
+* Unified Management Hub  
+  * Control every host, server, and connection from one streamlined dashboard. No more juggling scattered tools or risking configuration errors.
+* Instant Server Switching  
+  * Move between MCP servers in real time, without restarts or workflow interruptions. Stay in your creative flow.
+* Integrated Troubleshooting  
+  * Diagnose and resolve server issues faster with built-in testing tools and detailed, actionable logs.
+* Effortless Sharing  
+  * Share servers and configurations in seconds, making collaboration with teammates or the community seamless and duplication-free.
