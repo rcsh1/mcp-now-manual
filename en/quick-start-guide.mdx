@@ -1,0 +1,61 @@
+---
+title: "Quick start guide"
+lang: "en"
+description: "Get started with MCP Now installation and initial configuration."
+---
+
+This guide introduces how to use MCP Now to install an MCP server and connect it to your AI application (MCP host).
+
+## Prerequisites
+
+1. Install Node.js (npx) globally: [Download Node.js](https://nodejs.org/en/download).
+2. Download and install MCP Now.
+
+## Steps
+
+### Add hosts
+
+   1. Open MCP Now.
+   2. In the left navigation bar, click **Dashboard**.
+   3. In the **Dashboard** page, click **Add Host**. MCP Now will automatically scan the MCP hosts on your local environment. If the host you want to add is not detected, you can manually add it by clicking **Add Host Manually**, and enter the host name and MCP config path.
+   4. Select the hosts you want to add, and then click **Add Selected Hosts**.
+
+### Add servers to a host
+
+You can add servers to a host from the **Dashboard** page or the **Discovery** page.
+ 
+
+**To add a server to a host from the Dashboard page:**
+
+
+1. Click the host you want to add servers to, and then click **Add Servers**.
+2. Search the server by name, and then click **Add**.
+3. Fill in the required fields based on your server type. Some fields are filled in automatically. You can use the default values or modify them as needed.
+   - **For HTTP SSE servers**:
+     - **Name**: Enter a descriptive name (e.g., "Docker Assistant API").
+     - **URL**: Enter the endpoint URL (e.g., `http://localhost:3000/api`).
+     - **HTTP Headers** (optional): Add any necessary headers, such as `Authorization` or `Content-Type`.
+   - **For stdio servers**:
+     - **Name**: Enter a descriptive name (e.g., "AWS Toolkit API").
+     - **Command Arguments**: Enter the command needed to launch the server (e.g., `npx -y ...`).
+     - **Environment Variables** (optional): Add any required environment variables for your server.
+4. Click **Add**. MCP Now will install the server and add it to the selected hosts.
+
+**To add a server to a host from the **Discovery** page:**
+  1. In the left navigation bar, click **Discovery**.
+  2. In the **Discovery** page, browse through the servers. You can also search for servers by name, or filter by use cases. To learn more about a server, click the server card to open its detailed page.
+  3. Fill in the required fields, as detailed above.
+  4. Under **Add to Hosts**, select which MCP hosts (like Cursor or Claude Desktop) you want to connect this server to.
+  5. Click **Add**. MCP Now will install the server and add it to the selected hosts.
+
+### Connect to the server
+
+After you add a server to a host, it is time to connect to the server.
+
+1. In the left navigation bar, click **Dashboard**.
+2. In the **Dashboard** page, select the host you want to connect the server to.
+3. Locate your server, and toggle on the **Connect** switch.
+4. Once the **Status** turns to **Connected**, the server is successfully connected.
+
+You can now use the server in your AI application. During your host's runtime, you can manage each server from the MCP Now dashboard.
+

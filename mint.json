@@ -1,0 +1,50 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "MCP Now Product Manual",
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-XLRX3YMJXT"
+    }
+  },
+  "logo": {
+    "dark": "/logo/mcp-now.png",
+    "light": "/logo/mcp-now.png",
+    "href": "/en/introduction"
+  },
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
+  },
+  "favicon": "/logo/mcp-now.png",
+  "colors": {
+    "primary": "#1F32D6",
+    "light": "#1F32D6",
+    "dark": "#1F32D6"
+  },
+  "primaryTab": {
+    "name": "User Manual",
+    "isDefaultHidden": true
+  },
+  "tabs": [
+    {
+      "name": "MCP Now",
+      "url": "en/introduction",
+      "version": "Version 1.0"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Overview",
+      "pages": [
+        "en/introduction",
+        "en/quick-start-guide",
+        "en/faq"
+      ]
+    }
+  ],
+  "feedback": {
+    "suggestEdit": false,
+    "raiseIssue": false,
+    "thumbsRating": true
+  }
+}
