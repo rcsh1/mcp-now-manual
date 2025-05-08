@@ -1,0 +1,9 @@
+{
+  "official": {
+    "template": "program",
+    "settings": {
+      "command": "npm run start"
+    },
+    "tag": "server1"
+  }
+}
