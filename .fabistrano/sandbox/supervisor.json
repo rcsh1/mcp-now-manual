@@ -2,7 +2,7 @@
   "official": {
     "template": "program",
     "settings": {
-      "command": "npm run start"
+      "command": "minlify dev"
     },
     "tag": "server1"
   }
