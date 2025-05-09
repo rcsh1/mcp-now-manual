@@ -2,7 +2,7 @@
   "official": {
     "template": "program",
     "settings": {
-      "command": "minlify dev"
+      "command": "mintlify dev"
     },
     "tag": "server1"
   }
